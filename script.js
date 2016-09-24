@@ -27,6 +27,7 @@ function getSetGif() {
 }
 
 $(document).ready(function(){
+	
     $("#btn").click(function(){
       $("#btn").css('display','none')
 	  $("#text").css('display','none')
