@@ -17,7 +17,6 @@ function getQuery(){
 }
 
 
-
 function getSetGif() {
   var url = api + apiKey + query + getQuery();
   $.getJSON(url, function gotData(data){
@@ -30,6 +29,7 @@ function getSetGif() {
 $(document).ready(function(){
     $("#btn").click(function(){
       $("#btn").css('display','none')
+	  $("#text").css('display','none')
       getSetGif()
       $("#btn2").css('display','block')
     });
